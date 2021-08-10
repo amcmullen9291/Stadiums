@@ -1,49 +1,29 @@
 const stadiums = ([
-{name: "MetLife Stadium", city: "East Rutherford"	team: {Jets, Giants},	capacity: "82,566"},
-{name:, "FedEx Field" city: "Landover", team: "Washington FT", capcity: "82,000"},
-{name:, "Lambeau Field" city: "Green Bay", team: "Packers", capcity: "80,750"},
-{name:, "AT&T Stadium" city: "Arlington", team: "Cowboys", capcity: "80,000"},
-{name:, "Arrowhead Stadium" city: "Kansas City", team: "Chiefs", capcity: "76 416"},
-{name:, "Empower Field" city: "Denver", team: "Broncos", capcity: "76,125"},
-{name:, "Bank of America Stadium" city: "Charlotte", team: "Panthers", capcity: "75,412"},
-{name:, "Mercedes-Benz Superdome" city: "New Orleans", team: "Saints", capcity: "73,208"},
-{name:, "FirstEnergy Stadium" city: "Cleveland", team: "Browns", capcity: "72,300"},
-{name:, "NRG Stadium" city: "Houston", team: "Texans", capcity: "71,795"},
-{name:, "Highmark Blue Cross Blue Shield Stadium" city: "Buffalo", team: "Bills", capcity: "71,608"},
-{name:, "" city: "", team: "", capcity: ""},
-{name:, "" city: "", team: "", capcity: ""},
-{name:, "" city: "", team: "", capcity: ""},
-
-
-SoFi Stadium
-Inglewood	Chargers, Rams	70 240
-M&T Bank Stadium
-Baltimore	Ravens	70 107
-Lincoln Financial Field
-Philadelphia	Eagles	69 176
-Nissan Stadium
-Nashville	Tennessee Titans	69 143
-Levi's Stadium
-Santa Clara	49ers	68 983
-Heinz Field
-Pittsburgh	Steelers	68 400
-TIAA Bank Field
-Jacksonville	Jaguars	67 814
-U.S. Bank Stadium
-Minneapolis	Vikings	66 665
-Raymond James Stadium
-Tampa Bay	Buccaneers	65 857
-Paul Brown Stadium
-Cincinnati	Bengals	65 515
-Hard Rock Stadium
-Miami	Dolphins	65 326
-Ford Field
-Detroit	Lions	65 000
-Allegiant Stadium
-Las Vegas	Raiders, Rebels	65 000
-State Farm Stadium
-Glendale	Cardinals	63 400
-Lucas Oil Stadium
-Indianapolis	Colts	63 000
+{name: "MetLife Stadium", city: "East Rutherford", team: {Jets, Giants}, capacity: "82,566", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "FedEx Field", city: "Landover", team: "Washington FT", capcity: "82,000", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Lambeau Field", city: "Green Bay", team: "Packers", capcity: "80,750", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "AT&T Stadium", city: "Arlington", team: "Cowboys", capcity: "80,000", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Arrowhead Stadium", city: "Kansas City", team: "Chiefs", capcity: "76 416", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Empower Field", city: "Denver", team: "Broncos", capcity: "76,125", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Bank of America Stadium", city: "Charlotte", team: "Panthers", capcity: "75,412", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Mercedes-Benz Superdome", city: "New Orleans", team: "Saints", capcity: "73,208", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "FirstEnergy Stadium", city: "Cleveland", team: "Browns", capcity: "72,300", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "NRG Stadium", city: "Houston", team: "Texans", capcity: "71,795", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Highmark Blue Cross Blue Shield Stadium", city: "Buffalo", team: "Bills", capcity: "71,608", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "SoFi Stadium", city: "Inglewood", team: {Chargers, Rams}, capcity: "70,240", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "M&T Bank Stadium", city: "Baltimore", team: "Ravens", capcity: "70,107", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Lincoln Financial Field", city: "Philadelphia", team: "Eagles", capcity: "69,176", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Nissan Stadium", city: "Nashville", team: "Titans", capcity: "69,143", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Levi's Stadium", city: "Santa Clara", team: "49ers", capcity: "68,983", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Heinz Field", city: "Pittsburgh", team: "Steelers", capcity: "68,400", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "TIAA Bank Field", city: "Jacksonville", team: "Jaguars", capcity: "67,814", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "U.S. Bank Stadium", city: "Minneapolis", team: "Vikings", capcity: "66,665", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Raymond James Stadium", city: "Tampa Bay", team: "Buccaneers", capcity: "65,857", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Paul Brown Stadium", city: "Cincinnati", team: "Bengals", capcity: "65,515", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Hard Rock Stadium", city: "Miami", team: "Dolphins", capcity: "65,326", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Ford Field", city: "Detroit", team: "Lions", capcity: "65,000", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Allegiant Stadium", city: "Las Vegas", team: {Raiders, Rebels}, capcity: "65,000", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "State Farm Stadium", city: "Glendale", team: "Cardinals", capcity: "63,400", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Lucas Oil Stadium", city: "Indianapolis", team: "Colts", capcity: "63,000", mascot: "", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
 
 ])
