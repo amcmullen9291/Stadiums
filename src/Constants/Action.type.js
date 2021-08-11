@@ -1,0 +1,4 @@
+export  const ActionTypes = {
+    SET_STADIUMS: "SET_STADIUMS",
+    SELECTED_STADIUM: "SELECTED_STADIUM"
+}
