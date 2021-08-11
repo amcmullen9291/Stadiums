@@ -27,5 +27,10 @@ const stadiums = ([
 {name: "Allegiant Stadium", city: "Las Vegas", team: "Raiders", capcity: "65,000", mascot: "Raider Rusher", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
 {name: "State Farm Stadium", city: "Glendale", team: "Cardinals", capcity: "63,400", mascot: "Big Red", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
 {name: "Lucas Oil Stadium", city: "Indianapolis", team: "Colts", capcity: "63,000", mascot: "Blue", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
-
+{name: "Mercedes-Benz Stadium", city: "Atlanta, Georgia", team: "Falcons", capcity: "71,000", mascot: "Freddie Falcon", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Lumen Field", city: "Seattle, Washington", team: "Seahawks", capcity: "69,000", mascot: "The Seahawks have THREE mascots!: Blitz, Boom, and Taima", mascot_bio: "", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Gillette Stadium", city: "Foxborough, Massachusetts", team: "New England Patriots", capcity: "65,878", mascot: "Pat Patriot", mascot_bio: "Pat Patriot is a patriot from the American Revolution. He is named after the nickname of the team's original logo.", stadium_pic: "", mascot_pic: "", year_built: ""},
+{name: "Soldier Field", city: "Chicago, Illinois", team: "Bears", capcity: "61,500", mascot: "Staley Da Bear", mascot_bio: "Staley has two eponyms. He was named after the team's original name, the Decatur Staleys, as well as Bears founder A. E. Staley.", stadium_pic: "", mascot_pic: "", year_built: ""},
 ])
+
+ 
