@@ -1,8 +1,26 @@
+
+import React from 'react'
 import {Link } from 'react-router-dom';
-import Picture from './picture';
+import Picture from './StadiumPicture';
+import Mascot from './Mascot';
 
-const Stadium = {
+export default function SelectedStadium(props) {
+const entry = useSelector((state) => state.stadium);
 
+    if (Object.keys(entry).length > 0) {
+        const { name, city, team, capacity, mascot, mascot_bio, stadium_pic, mascot_pic, year_built, background} = entry.data.data.attributes;
+        var stadiumDetails = (
+          <>
+          <div>
+              <Mascot/>
+            <form></form> //formData
+            </div>
+          </>
+        );
+    }
+return(
+      <>
+      <Mascot/>
+  </>
+  )
 }
-
-export default Stadium;

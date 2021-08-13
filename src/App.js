@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Switch>
           <Route path={"/"} exact component={Stadiums}/>
-          <Route path={"/"} exact component={SelectedStadiums}/>
+          <Route path={"/:name"} exact component={SelectedStadium}/>
           <Redirect to={"/"} />
         </Switch>
     </Router>
