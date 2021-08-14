@@ -6,7 +6,7 @@ export default function StadiumPicture(props) {
 
   return (
     <div>
-          {/* <img alt="Stadiums"  className="stadium_img" src={`${process.env.PUBLIC_URL}/${stadium_pic}`}/> */}
+          {/* <img alt="Stadiums"  className="stadium_img" src={`${process.env.PUBLIC_URL}/Stadiums/${stadium_pic}`}/> */}
           <p>PlaceHolder</p>
     </div>
   )

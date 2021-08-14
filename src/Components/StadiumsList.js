@@ -8,7 +8,7 @@ function StadiumList(){
 
   const dispatch = useDispatch();
 
-const [Stadiums, StadiumList ] = useState([
+let [Stadiums, StadiumList ] = useState([
 {name: "MetLife Stadium", city: "East Rutherford", team: "Jets", capacity: "82,566", mascot: "The Jets have no official mascot.", mascot_bio: "The Jets have no official mascot.", stadium_pic: "", mascot_pic: "Jets.jpg", year_built: "2010",  background1: "#125740", background2: "#FFFFFF", division: "AFC East"},
 {name: "MetLife Stadium", city: "East Rutherford", team: "Giants", capacity: "82,566", mascot: "The Giants have no official mascot.", mascot_bio: "The Giants have no official mascot.", stadium_pic: "", mascot_pic: "Giants.jpg", year_built: "2010",  background1: "#0B2265", background2: "#A71930", division: "NFC East"},
 {name: "FedEx Field", city: "Landover", team: "Washington FT", capcity: "82,000", mascot: "'Team Mascot'", mascot_bio: "The Washington Football Team has no official mascot.", stadium_pic: "", mascot_pic: "washington_football_team.jpg", year_built: "1997",  background1: "#773141", background2: "#FFB612", division: ""},
@@ -46,6 +46,7 @@ const [Stadiums, StadiumList ] = useState([
 
 const fetchStadiums = () => {
   dispatch(setStadiumList(Stadiums));
+  console.log("Current State:", Stadiums)
 };
 
 useEffect(() => {
@@ -60,34 +61,49 @@ function NameSort (){
   var nameB = b.name.toUpperCase(); // ignore upper and lowercase
   if (nameA < nameB) {
     return -1;
-  }})
-  this.setState(Stadiums);
+  }
+  return Stadiums;
+})
+  console.log(Stadiums);
 };
 
 function OldestFirst(){
   Stadiums = Stadiums.sort((stadium1, stadium2) => stadium1.year_built - stadium2.year_built);
-  this.setState(Stadiums);
+  console.log(Stadiums);
+
 }
 
 function NewestFirst(){
   Stadiums = Stadiums.sort((firstItem, secondItem) => secondItem.year_built - firstItem.year_built);
-  this.setState(Stadiums);
+  console.log(Stadiums);
 
 }
 
 
-function ReverseName (a, b){
+function ReverseName (){
   Stadiums = Stadiums.sort(function(a, b) {
   var nameA = a.name.toUpperCase(); // ignore upper and lowercase
   var nameB = b.name.toUpperCase(); // ignore upper and lowercase
   if (nameA > nameB) {
     return -1;
-  }})
-  this.setState(Stadiums);
+  }
+  return Stadiums;
+})
+  console.log(Stadiums);
 };
 // ------------------------------------------
 return (
     <>
+    <div> Sort Stadiums by name</div>
+    <div>
+      <button onClick={ReverseName}>Reverse Sort</button>
+      <button onClick={NameSort}>Alphabetical Sort</button>
+    </div>
+  <div>Sort by Year Built</div>
+    <div>
+        <button onClick={OldestFirst}>Oldest First</button>
+        <button onClick={NewestFirst}>Newest First</button>
+    </div>
     </>
 )
 }
