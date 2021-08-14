@@ -37,10 +37,10 @@ const [Stadiums, StadiumList ] = useState([
 {name: "Allegiant Stadium", city: "Las Vegas", team: "Raiders", capcity: "65,000", mascot: "Raider Rusher", mascot_bio: "", stadium_pic: "", mascot_pic: "LV_Raider_Rush.jpg", year_built: "2020",  background1: "#000000", background2: "#A5ACAF", division: "AFC West"},
 {name: "State Farm Stadium", city: "Glendale", team: "Cardinals", capcity: "63,400", mascot: "Big Red", mascot_bio: "", stadium_pic: "", mascot_pic: "Cardinals_Big_Red.jpg", year_built: "2006",  background1: "#97233F", background2: "#FFB612", division: "NFC West"},
 {name: "Lucas Oil Stadium", city: "Indianapolis", team: "Colts", capcity: "63,000", mascot: "Blue", mascot_bio: "", stadium_pic: "", mascot_pic: "Colts_Blue.jpg", year_built: "2008",  background1: "#002C5F", background2: "#A2AAAD", division: "AFC South"},
-{name: "Mercedes-Benz Stadium", city: "Atlanta, Georgia", team: "Falcons", capcity: "71,000", mascot: "Freddie Falcon", mascot_bio: "", stadium_pic: "", mascot_pic: "Falcons_Freddy.jpg", year_built: "2017",  background1: "#A71930", background2: "#000000", division: "NFC South"},
-{name: "Lumen Field", city: "Seattle, Washington", team: "Seahawks", capcity: "69,000", mascot: "The Seahawks have THREE mascots!: Blitz, Boom, and Taima", mascot_bio: "", stadium_pic: "", mascot_pic: "Seahawks_Blitz.jpg", year_built: "2002",  background1: "#002244", background2: "#69BE28", division: "NFC East"},
-{name: "Gillette Stadium", city: "Foxborough, Massachusetts", team: "New England Patriots", capcity: "65,878", mascot: "Pat Patriot", mascot_bio: "Pat Patriot is a patriot from the American Revolution. He is named after the nickname of the team's original logo.", stadium_pic: "", mascot_pic: "PatPatriot.jpg", year_built: "2002",  background1: "#002244", background2: "#C60C30", division: "AFC East"},
-{name: "Soldier Field", city: "Chicago, Illinois", team: "Bears", capcity: "61,500", mascot: "Staley Da Bear", mascot_bio: "Staley has two eponyms. He was named after the team's original name, the Decatur Staleys, as well as Bears founder A. E. Staley.", stadium_pic: "", mascot_pic: "Chicago_Staleythebear.jpg", year_built: "1924",  background1: "#0B162A", background2: "#C83803", division: "NFC North"},
+{name: "Mercedes-Benz Stadium", city: "Atlanta", team: "Falcons", capcity: "71,000", mascot: "Freddie Falcon", mascot_bio: "", stadium_pic: "", mascot_pic: "Falcons_Freddy.jpg", year_built: "2017",  background1: "#A71930", background2: "#000000", division: "NFC South"},
+{name: "Lumen Field", city: "Seattle", team: "Seahawks", capcity: "69,000", mascot: "The Seahawks have THREE mascots!: Blitz, Boom, and Taima", mascot_bio: "", stadium_pic: "", mascot_pic: "Seahawks_Blitz.jpg", year_built: "2002",  background1: "#002244", background2: "#69BE28", division: "NFC East"},
+{name: "Gillette Stadium", city: "Foxborough", team: "New England Patriots", capcity: "65,878", mascot: "Pat Patriot", mascot_bio: "Pat Patriot is a patriot from the American Revolution. He is named after the nickname of the team's original logo.", stadium_pic: "", mascot_pic: "PatPatriot.jpg", year_built: "2002",  background1: "#002244", background2: "#C60C30", division: "AFC East"},
+{name: "Soldier Field", city: "Chicago", team: "Bears", capcity: "61,500", mascot: "Staley Da Bear", mascot_bio: "Staley has two eponyms. He was named after the team's original name, the Decatur Staleys, as well as Bears founder A. E. Staley.", stadium_pic: "", mascot_pic: "Chicago_Staleythebear.jpg", year_built: "1924",  background1: "#0B162A", background2: "#C83803", division: "NFC North"},
 ]);
 
 
@@ -51,6 +51,8 @@ const fetchStadiums = () => {
 useEffect(() => {
   fetchStadiums();
 }, []);
+
+// ----------------------sorting functions
 
 function NameSort (){
   Stadiums = Stadiums.sort(function(a, b) {
@@ -83,18 +85,7 @@ function ReverseName (a, b){
   }})
   this.setState(Stadiums);
 };
-
-function YearBuilt(a, b) {
-  if (a < b ) {
-    return a;
-  }
-}
-function ReverseYearBuilt(a,b){
-  if (a > b ) {
-    return a;
-  }
-}
-
+// ------------------------------------------
 return (
     <>
     </>
