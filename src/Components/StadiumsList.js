@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { connect, useDispatch, useSelector } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import { setStadiumList } from '../Actions/StadiumActions';
+import Logo from './logo';
 
 
 
@@ -122,6 +123,9 @@ if (Object.keys(Stadiums).length > 0) {
 }
 return (
     <>
+    <div id="back">
+    <div id="front_bottom">
+    <div id="front">
     <center><div>
       <table>
         <tr id="header">
@@ -134,18 +138,25 @@ return (
       {RenderStadiums}
       </table>
     </div></center>
-    <div> Sort Stadiums by name</div>
+    <div id="HomePagebuttons">
+    <div id="sortbyname"> Sort Stadiums by name</div><br/>
     <div>
-      <button onClick={ReverseName}>Reverse Sort</button>
-      <button onClick={NameSort}>Alphabetical Sort</button>
+    <button className="HomeButtons" onClick={NameSort}>Alphabetical Sort</button><button className="HomeButtons" onClick={ReverseName}>Reverse Sort</button>
     </div>
-  <div>Sort by Year Built</div>
+    <br/>
+  <div id="sortbyyear">Sort by Year Built
+  </div><br/>
     <div>
-        <button onClick={OldestFirst}>Oldest First</button>
-        <button onClick={NewestFirst}>Newest First</button>
+        <button className="HomeButtons" onClick={OldestFirst}>Oldest First</button>
+        <button className="HomeButtons" onClick={NewestFirst}>Newest First</button>
+    <hr id="buttonLine"/>
     </div>
-    <button>New button</button>
-    
+    </div>
+    <center><button>Button</button></center>
+    </div><hr/>
+    <Logo/>
+    </div>
+    </div>
     </>
 )
 }
