@@ -139,7 +139,7 @@ return (
       </table>
     </div></center>
     <div id="HomePagebuttons">
-    <div id="sortbyname"> Sort Stadiums by name</div><br/>
+    <div id="sortbyname">Options:</div><br/>
     <div>
     <button className="HomeButtons" onClick={NameSort}>Alphabetical Sort</button><button className="HomeButtons" onClick={ReverseName}>Reverse Sort</button>
     </div>
@@ -152,7 +152,7 @@ return (
     <hr id="buttonLine"/>
     </div>
     </div>
-    <center><button>Button</button></center>
+    <center><button href="#" id="hike">Hike!</button></center>
     </div><hr/>
     <Logo/>
     </div>

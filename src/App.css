@@ -47,6 +47,7 @@ table{
     height: 50%;
     background-color: #125740; 
     /* margin-right: 40%; */
+    border: 5px solid black;
 }
 
 #front_bottom{
@@ -87,6 +88,8 @@ height:auto
 
 #sortbyyear{
   background-color: tan;
+  color: none;
+  visibility: hidden;
   width:fit-content;
   font-size: 18px;
 }
@@ -106,3 +109,13 @@ height:auto
 #buttonLine{
   width:50%
 }
+
+#bottomHR{
+  color: black;
+}
+
+#hike{
+  border-radius: 24%;
+  height: 2em;
+}
+
