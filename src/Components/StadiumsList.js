@@ -52,6 +52,49 @@ useEffect(() => {
   fetchStadiums();
 }, []);
 
+function NameSort (){
+  Stadiums = Stadiums.sort(function(a, b) {
+  var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+  var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+  if (nameA < nameB) {
+    return -1;
+  }})
+  this.setState(Stadiums);
+};
+
+function OldestFirst(){
+  Stadiums = Stadiums.sort((stadium1, stadium2) => stadium1.year_built - stadium2.year_built);
+  this.setState(Stadiums);
+}
+
+function NewestFirst(){
+  Stadiums = Stadiums.sort((firstItem, secondItem) => secondItem.year_built - firstItem.year_built);
+  this.setState(Stadiums);
+
+}
+
+
+function ReverseName (a, b){
+  Stadiums = Stadiums.sort(function(a, b) {
+  var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+  var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+  if (nameA > nameB) {
+    return -1;
+  }})
+  this.setState(Stadiums);
+};
+
+function YearBuilt(a, b) {
+  if (a < b ) {
+    return a;
+  }
+}
+function ReverseYearBuilt(a,b){
+  if (a > b ) {
+    return a;
+  }
+}
+
 return (
     <>
     </>
