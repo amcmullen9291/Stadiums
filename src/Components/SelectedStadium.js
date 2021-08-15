@@ -2,9 +2,6 @@
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
-import { selectedStadium } from '../Actions/StadiumActions';
-// import Picture from './StadiumPicture';
-// import Mascot from './Mascot';
 
 export default function SelectedStadium() {
 
@@ -19,19 +16,22 @@ export default function SelectedStadium() {
     const top = document.getElementById("topColor");
     const color1 = StadiumData.background1
     console.log(top);
-  //   top.style.backgroundColor = `{StadiumData.background1}`;
-  // }
-  // top.style.setProperty("backbroundColor", StadiumData.background1);
-if(Object.keys(StadiumData).length >0){
-  const { nameOf, city, team, capacity, mascot, mascot_bio, mascot_pic,  background1, background2, division } = StadiumData;
+
+    if(Object.keys(StadiumData).length >0){
+  const { nameOf, city, team, capacity, mascot, mascot_bio, stadium_pic, mascot_pic,  background1, background2, division } = StadiumData;
   var StadiumDetails = (
     <>
-    <div id="topColor" style={{backgroundColor: StadiumData.background1}}>
+    <img alt={nameOf}  className="" src={`${process.env.PUBLIC_URL}/Stadiums/${stadium_pic}`}/><br/>
+    {/* <img alt={nameOf}  className="" src={`${process.env.PUBLIC_URL}/Stadiums/${stadium_pic}`}/> */}
 
-    <p>Guess I need to have something i nthe div to see the color, huh</p>
+    <div id="topColor" style={{backgroundColor: StadiumData.background1}}>
+    <p id="mascot">{mascot}</p>
+    <img alt={mascot}  className="mascot_img" src={`${process.env.PUBLIC_URL}/Mascots/${mascot_pic}`}/>
+    blah blah blah
     </div>
     <div id="bottomColor" style={{backgroundColor: StadiumData.background2}}>
-      still just making words to see the background
+      {/* <img alt={mascot}  className="stadium_img" src={`${process.env.PUBLIC_URL}/Mascots/${mascot_pic}`}/> */}
+      <p>still just making words to see the background</p>
     </div>
     </>
   )   
