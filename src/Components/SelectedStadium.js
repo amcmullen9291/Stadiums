@@ -22,6 +22,22 @@ export default function SelectedStadium() {
   //   top.style.backgroundColor = `{StadiumData.background1}`;
   // }
   // top.style.setProperty("backbroundColor", StadiumData.background1);
+if(Object.keys(StadiumData).length >0){
+  const { nameOf, city, team, capacity, mascot, mascot_bio, mascot_pic,  background1, background2, division } = StadiumData;
+  var StadiumDetails = (
+    <>
+    <div id="topColor" style={{backgroundColor: StadiumData.background1}}>
+
+    <p>Guess I need to have something i nthe div to see the color, huh</p>
+    </div>
+    <div id="bottomColor" style={{backgroundColor: StadiumData.background2}}>
+      still just making words to see the background
+    </div>
+    </>
+  )   
+}
+
+
     return(
       <>
       <div id="selectedPageHomeLink">
@@ -31,11 +47,9 @@ export default function SelectedStadium() {
       </div>
       <div id="intro">The {StadiumData.team}'s own</div>
       <center><h1>{StadiumData.nameOf}</h1></center>
-      <div id="topColor">
-
-        <p>Guess I need to have something i nthe div to see the color, huh</p>
+      <div>
+        {StadiumDetails}
       </div>
-      <div id="bottomColor"></div>
       </>
   )
 }
