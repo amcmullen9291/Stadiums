@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { connect, useDispatch } from 'react-redux';
 import { setStadiumList } from '../Actions/StadiumActions';
 import Logo from './logo';
+import { Link } from 'react-router-dom';
 
 
 
@@ -109,13 +110,13 @@ console.log(Stadiums);
 
 if (Object.keys(Stadiums).length > 0) {
   var RenderStadiums = Stadiums.map(stadium => {
-    const {nameOf, city, team } = stadium;
+    const {id, nameOf, city, team } = stadium;
     return (
       <>
       <th>
       </th>
-    <tr key={team}>
-      <td>{nameOf}</td><td className="tableSpacer"></td><td >{city}</td><td className="tableSpacer"></td><td>{team}</td>
+    <tr key={stadium.id}>
+      <td><Link to={`/Stadiums/${stadium.id}/${nameOf}`}>{stadium.nameOf}</Link></td><td className="tableSpacer"></td><td >{city}</td><td className="tableSpacer"></td><td>{team}</td>
     </tr>
     </>
       )
@@ -175,6 +176,7 @@ const mapStateToProps = (state) => {
       StadiumList: (Stadiums) => { dispatch({type: 'SET_STADIUMS', Stadiums})}
     }
   }
+
 
 
   console.log("Stadium List:", StadiumList);

@@ -119,3 +119,21 @@ height:auto
   height: 2em;
 }
 
+#selectedPageHomeLink {
+  margin-left: 85%;
+  background-color: #FF3C00;
+  justify-content: center;
+}
+
+#ReturnHome {
+  color:#FFB612;
+  border: 4px solid whitesmoke;
+  font-size: 3em;
+}
+
+#intro{
+  background-color: grey;
+  width:fit-content;
+  font-size: 2em;
+  color: tan;
+}
