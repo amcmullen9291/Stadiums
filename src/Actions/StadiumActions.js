@@ -7,9 +7,9 @@ export const setStadiumList = (list) => {
     }
 }
 
-export const selectedStadium = (venue) => {
+export const selectedStadium = (stadium) => {
     return {
         type: ActionTypes.SELECTED_STADIUM,
-        payload: venue
+        payload: stadium
     }
 }

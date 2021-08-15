@@ -11,15 +11,17 @@ export default function SelectedStadium() {
     const stadium = useSelector((state) => state.StadiumList);
     const ReturnedID = useParams();
     const StadiumID = ReturnedID.id - "1";
-    // console.log("StadiumData:", stadium);
     console.log("StadiumName:", ReturnedID.nameOf);
-    console.log("Selected Stadium's Index", StadiumID)
-    console.log("Stadium List", stadium)
-
   console.log("=======================================")
   const StadiumData = stadium.StadiumList[StadiumID];
-    console.log("Selected Stadium", StadiumData)
+    console.log("Selected Stadium", StadiumData);
 
+    const top = document.getElementById("topColor");
+    const color1 = StadiumData.background1
+    console.log(top);
+  //   top.style.backgroundColor = `{StadiumData.background1}`;
+  // }
+  // top.style.setProperty("backbroundColor", StadiumData.background1);
     return(
       <>
       <div id="selectedPageHomeLink">
@@ -29,7 +31,10 @@ export default function SelectedStadium() {
       </div>
       <div id="intro">The {StadiumData.team}'s own</div>
       <center><h1>{StadiumData.nameOf}</h1></center>
-      <div id="topColor"></div>
+      <div id="topColor">
+
+        <p>Guess I need to have something i nthe div to see the color, huh</p>
+      </div>
       <div id="bottomColor"></div>
       </>
   )
