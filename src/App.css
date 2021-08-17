@@ -157,7 +157,7 @@ position: fixed;
 }
 
 .stadium_img{
-  left:0;
+  right: 15%;
   position: fixed;
 }
 
@@ -171,4 +171,18 @@ position: fixed;
 #mascot {
   font-size: 18px;
   margin-left: 1em;
+}
+
+#year_built{
+  margin-left: 1em;
+}
+
+#bioLine{
+  height:20%;
+  width: 45%;
+  border-left: 2px solid grey;
+  overflow-y: hidden;
+  margin-top: 3%;
+  font-size: 24px;
+  color: whitesmoke;
 }

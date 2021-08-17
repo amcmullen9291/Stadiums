@@ -18,20 +18,20 @@ export default function SelectedStadium() {
     console.log(top);
 
     if(Object.keys(StadiumData).length >0){
-  const { nameOf, city, team, capacity, mascot, mascot_bio, stadium_pic, mascot_pic,  background1, background2, division } = StadiumData;
+  const { nameOf, city, team, capacity, mascot, mascot_bio, stadium_pic, mascot_pic,  background1, background2, division, year_built } = StadiumData;
   var StadiumDetails = (
     <>
     <img alt={nameOf}  className="" src={`${process.env.PUBLIC_URL}/Stadiums/${stadium_pic}`}/><br/>
     {/* <img alt={nameOf}  className="" src={`${process.env.PUBLIC_URL}/Stadiums/${stadium_pic}`}/> */}
 
     <div id="topColor" style={{backgroundColor: StadiumData.background1}}>
-    <p id="mascot">{mascot}</p>
+    <div id="year_built">Year Built: {year_built}.</div>
+    <p id="mascot">Mascot: {mascot}</p>
     <img alt={mascot}  className="mascot_img" src={`${process.env.PUBLIC_URL}/Mascots/${mascot_pic}`}/>
-    blah blah blah
     </div>
     <div id="bottomColor" style={{backgroundColor: StadiumData.background2}}>
       {/* <img alt={mascot}  className="stadium_img" src={`${process.env.PUBLIC_URL}/Mascots/${mascot_pic}`}/> */}
-      <p>still just making words to see the background</p>
+      <center><div id="bioLine">{mascot_bio}</div></center>
     </div>
     </>
   )   
