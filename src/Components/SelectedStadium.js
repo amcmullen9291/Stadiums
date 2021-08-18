@@ -31,6 +31,7 @@ export default function SelectedStadium() {
     </div>
     <div id="bottomColor" style={{backgroundColor: StadiumData.background2}}>
       {/* <img alt={mascot}  className="stadium_img" src={`${process.env.PUBLIC_URL}/Mascots/${mascot_pic}`}/> */}
+      <span id="division">{division}</span>
       <center><div id="bioLine">{mascot_bio}</div></center>
     </div>
     </>
