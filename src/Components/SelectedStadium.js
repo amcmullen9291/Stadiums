@@ -47,7 +47,7 @@ export default function SelectedStadium() {
         </center>
       </div>
       <div id="intro">The {StadiumData.team}'s own</div>
-      <center><h1>{StadiumData.nameOf}</h1></center>
+      <center><h1 id="StadiumName">{StadiumData.nameOf}</h1></center>
       <div>
         {StadiumDetails}
       </div>
